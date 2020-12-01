@@ -43,7 +43,7 @@ int UTF8_Decoder_canTerminate(UTF8_Decoder*);
 #define UTF8_ERROR_CHAR_OVERFLOW 4 // More than cc characters would be generated
 #define UTF8_ERROR_UNEXPECTED_TERMINATION 5 // Input byte sequence was not terminated on a character boundary
 ucp* UTF8_DecodeArray(byte* ba, size_t bc, ucp* ca, size_t cc, int* error);
-// Similar to the above, except that the input byte array is a char array terminated by nul.
+// Similar to the above, except that the input byte array is a char array terminated by null.
 ucp* UTF8_DecodeString(const char* str, ucp* ca, size_t cc, int* error);
 
 //
